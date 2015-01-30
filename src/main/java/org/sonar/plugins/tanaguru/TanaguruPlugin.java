@@ -24,6 +24,16 @@ import java.util.List;
 import org.sonar.api.Properties;
 import org.sonar.api.Property;
 import org.sonar.api.SonarPlugin;
+import org.sonar.api.config.PropertyDefinition;
+import org.sonar.api.resources.Qualifiers;
+import org.sonar.plugins.tanaguru.api.TanaguruConstants;
+import org.sonar.plugins.tanaguru.core.Tanaguru;
+import org.sonar.plugins.tanaguru.rules.Rgaa3Profile;
+import org.sonar.plugins.tanaguru.rules.TanaguruRulesRepository;
+import org.sonar.plugins.web.core.WebCodeColorizerFormat;
+import org.sonar.plugins.web.core.WebSensor;
+import org.sonar.plugins.web.core.WebSourceImporter;
+import org.sonar.plugins.web.duplications.WebCpdMapping;
 
 /**
  *
@@ -40,15 +50,53 @@ import org.sonar.api.SonarPlugin;
           project = true),})
 public final class TanaguruPlugin extends SonarPlugin {
 
+  private static final String CATEGORY = "Tanaguru";
+  
   @Override
   public List getExtensions() {
-    return ImmutableList.of(
-            );
+    ImmutableList.Builder<Object> builder = ImmutableList.builder();
+
+    // web language
+    builder.add(Tanaguru.class);
+
+//  web files importer
+    builder.add(WebSourceImporter.class);
+
+//  web rules repository
+    builder.add(TanaguruRulesRepository.class);
+
+//  profiles
+    builder.add(Rgaa3Profile.class);
+
+//  web sensor
+    builder.add(WebSensor.class);
+//
+//  Code Colorizer
+    builder.add(WebCodeColorizerFormat.class);
+//  Copy/Paste detection mechanism
+    builder.add(WebCpdMapping.class);
+//
+    builder.addAll(pluginProperties());
+
+    return builder.build();
   }
+
   // Global JavaScript constants
   public static final String FALSE = "false";
   public static final String FILE_SUFFIXES_KEY = "sonar.tanaguru.file.suffixes";
   public static final String FILE_SUFFIXES_DEFVALUE = ".html,.xhtml,.php,.jsp,.jsf,.html";
   public static final String PROPERTY_PREFIX = "sonar.tanaguru";
 
+  private static ImmutableList<PropertyDefinition> pluginProperties() {
+    return ImmutableList.of(
+
+      PropertyDefinition.builder(TanaguruConstants.FILE_EXTENSIONS_PROP_KEY)
+        .name("File suffixes")
+        .description("List of file suffixes that will be scanned.")
+        .category(CATEGORY)
+        .defaultValue(TanaguruConstants.FILE_EXTENSIONS_DEF_VALUE)
+        .onQualifiers(Qualifiers.PROJECT)
+        .build()
+    );
+  }
 }
