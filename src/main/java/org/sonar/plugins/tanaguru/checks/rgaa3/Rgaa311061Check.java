@@ -35,6 +35,9 @@ import org.sonar.plugins.web.node.TagNode;
 })
 public class Rgaa311061Check extends AbstractPageCheck {
 
+  public static String ADD_LEGEND_TO_FIELDSET_MSG = "\"Ajouter une balise <legend> sur cette balise <fieldset>";
+//  public static String ADD_LEGEND_TO_FIELDSET_MSG = "Add a <legend> tag to this fieldset.";
+  
   private int fieldsetLine = 0;
   private boolean foundLegend;
 
@@ -52,7 +55,7 @@ public class Rgaa311061Check extends AbstractPageCheck {
   public void endElement(TagNode node) {
     if (isFieldSet(node)) {
       if (!foundLegend && fieldsetLine != 0) {
-        createViolation(fieldsetLine, "Chaque regroupement de champs de formulaire (balise fieldset) est-il suivi dans le code source par une légende (balise legend) ?");
+        createViolation(fieldsetLine, ADD_LEGEND_TO_FIELDSET_MSG);
       }
 
       foundLegend = false;

@@ -38,6 +38,8 @@ import org.sonar.plugins.web.checks.WebRule;
 })
 public class Rgaa308031Check extends AbstractPageCheck {
 
+  public static String WRONG_DOCTYPE_POSITION = "Insérer une déclaration de type <!DOCTYPE> avant la balise html";
+//  public static String WRONG_DOCTYPE_POSITION = "Insert a <!DOCTYPE> declaration before html tag.";
   private boolean foundDoctype;
   private boolean reported;
 
@@ -66,7 +68,7 @@ public class Rgaa308031Check extends AbstractPageCheck {
   @Override
   public void startElement(TagNode node) {
     if (isHtml(node) && !foundDoctype && !reported) {
-      createViolation(node.getStartLinePosition(), "8.1.3 Pour chaque page Web possédant une déclaration de type de document, celle-ci est-elle située avant la balise html dans le code source ?");
+      createViolation(node.getStartLinePosition(), WRONG_DOCTYPE_POSITION);
       reported = true;
     }
   }

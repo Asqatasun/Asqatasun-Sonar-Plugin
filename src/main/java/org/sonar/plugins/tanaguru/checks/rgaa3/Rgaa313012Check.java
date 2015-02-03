@@ -37,11 +37,14 @@ import org.sonar.plugins.web.node.TagNode;
 public class Rgaa313012Check extends AbstractPageCheck {
 
   private static final String SEPERATOR = ";";
+  public static String CHANGE_NOT_IMMEDIATE_REDIRECT = "Supprimer la balise <meta> avec l\'attribut \"refresh\"  "
+          + "ou lui donner la valeur de 0 pour une redirection immédiate.";
+//  private static String CHANGE_IMMEDIATE_REDIRECT = "Remove this meta refresh tag or set its value to 0 for immediate redirect.";
 
   @Override
   public void startElement(TagNode node) {
     if (isMetaRefreshTag(node)) {
-      createViolation(node.getStartLinePosition(), "13.1.2 : Pour chaque page Web, chaque procédé de redirection effectué via une balise meta est-il immédiat (hors cas particuliers) ?");
+      createViolation(node.getStartLinePosition(), CHANGE_NOT_IMMEDIATE_REDIRECT);
     }
   }
 
