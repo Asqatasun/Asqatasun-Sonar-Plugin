@@ -1,0 +1,26 @@
+<p>
+L'attribut <code>alt</code> permet de définir l'alternative textuelle d'une image.
+Elle est utilisée lorsque l'image actuelle ne peut être restituée pour une des
+causes suivantes : 
+</p>
+
+<ul>
+  <li>L'image ne peut pas être trouvée (404)</li>
+  <li>L'utilisateur utilise un assistance technique pour lire la page</li>
+  <li>La connexion internet est lente, et le chargement des images est ralenti</li>
+  <li>Le chargement des images est désactivé, par exemple pour réduire la 
+      consommation des données sur terminaux mobile</li>
+</ul>
+
+<h2>Exemple de code non conforme</h2>
+
+<pre>
+&lt;img src="foo.png" /&gt;       &lt;!-- Non conforme --&gt;
+</pre>
+
+<h2>Exemple de code conforme</h2>
+
+<pre>
+&lt;img src="foo.png" alt="Information véhiculée par foo.png" /&gt;       &lt;!-- Lorsque foo.png porte une information --&gt;
+&lt;img src="foo.png" alt="" /&gt;                                        &lt;!-- Lorsque foo.png est une image purement décorative --&gt;
+</pre>

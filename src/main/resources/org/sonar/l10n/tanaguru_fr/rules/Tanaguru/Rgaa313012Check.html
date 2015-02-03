@@ -1,0 +1,40 @@
+<p>
+L'utilisation de <code>&lt;meta http-equiv="refresh"&gt;</code> est découragée 
+par le <span lang="en">World Wide Web Consortium (W3C)</span>.
+Si l'utilisateur utilise le bouton 'Back', certains navigateurs vont revenir
+sur la page redirigée, plutot que sur la page attendue par l'utilisateur, celle 
+qui précède la page redirigée.
+</p>
+
+<p>
+Pour rafraichir une page, l'utilisation d'Ajax est une possibilité, pour mettre
+à jour uniquement les éléments qui ont besoin d'être rafraichis plutot que de
+rafraichir la page entière. Attention toutefois, dans ce cas, à utiliser Aria
+pour 
+Pour rediriger vers une autre page, privilégier les modes de redirection serveur
+avec les codes de retour HTTP 301 <span lang="en">'Moved Permanently'</span> ou 
+302 <span lang="en">'Found'</span>
+</p>
+
+<h2>Exemple de code non conforme</h2>
+
+<pre>
+&lt;head&gt;
+  &lt;meta http-equiv="refresh" content="5"&gt;   &lt;!-- Non-Conforme --&gt;
+  &lt;meta name="description" content="..."&gt;
+&lt;/head&gt;
+</pre>
+
+<h2>Exemple de code conforme</h2>
+
+<pre>
+&lt;head&gt;
+  &lt;meta name="description" content="..."&gt;
+&lt;/head&gt;
+</pre>
+<pre>
+&lt;head&gt;
+  &lt;meta http-equiv="refresh" content="0"&gt;   &lt;!-- Conforme --&gt;
+  &lt;meta name="description" content="..."&gt;
+&lt;/head&gt;
+</pre>
