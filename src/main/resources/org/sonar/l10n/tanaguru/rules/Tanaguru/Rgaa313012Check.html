@@ -1,2 +1,32 @@
-<h3>Summary 8.1.3 </h3>
-<p>Pour chaque page Web possédant une déclaration de type de document, celle-ci est-elle située avant la balise html dans le code source ? </p>
+<p>
+Use of <code>&lt;meta http-equiv="refresh"&gt;</code> is discouraged by the World Wide Web Consortium (W3C).
+If a user clicks the 'Back' button, some browers will go back to the redirecting page, which will prevent the user from actually going back.
+</p>
+
+<p>
+To refresh the page, a better alternative is to use Ajax, to refresh only what needs to be refreshed and not the whole page.
+To redirect to another page, using the HTTP response status code 301 'Moved Permanently' and 302 'Found' is a better option.
+</p>
+
+<h2>Example de code non conforme</h2>
+
+<pre>
+&lt;head&gt;
+  &lt;meta http-equiv="refresh" content="5"&gt;   &lt;!-- Non-Compliant --&gt;
+  &lt;meta name="description" content="..."&gt;
+&lt;/head&gt;
+</pre>
+
+<h2>Example de code conforme</h2>
+
+<pre>
+&lt;head&gt;
+  &lt;meta name="description" content="..."&gt;
+&lt;/head&gt;
+</pre>
+<pre>
+&lt;head&gt;
+  &lt;meta http-equiv="refresh" content="5"&gt;
+  &lt;meta name="description" content="..."&gt;
+&lt;/head&gt;
+</pre>
