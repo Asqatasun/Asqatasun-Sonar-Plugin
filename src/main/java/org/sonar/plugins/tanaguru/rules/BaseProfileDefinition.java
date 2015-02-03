@@ -40,7 +40,7 @@ public abstract class BaseProfileDefinition extends ProfileDefinition {
   @Override
   public final RulesProfile createProfile(ValidationMessages validation) {
     RulesProfile profile = RulesProfile.create(getProfileName(), getLanguageKey());
-    for (Class ruleClass : CheckClasses.getCheckClasses()) {
+    for (Class ruleClass : TanaguruCheckClasses.getCheckClasses()) {
       String ruleKey = RuleAnnotationUtils.getRuleKey(ruleClass);
       if (isActive(ruleClass)) {
         Rule rule = ruleFinder.findByKey(getRepositoryKey(), ruleKey);

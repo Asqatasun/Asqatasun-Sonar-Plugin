@@ -40,7 +40,7 @@ public final class TanaguruRulesRepository extends RuleRepository {
   @Override
   public List<Rule> createRules() {
     List<Rule> result = Lists.newArrayList();
-    for (Class ruleClass : CheckClasses.getCheckClasses()) {
+    for (Class ruleClass : TanaguruCheckClasses.getCheckClasses()) {
       if (AnnotationUtils.getAnnotation(ruleClass, WebRule.class) != null) {
         result.add(RuleRepositoryHelper.createRule(
           REPOSITORY_KEY,

@@ -47,7 +47,7 @@ import org.sonar.api.scan.filesystem.ModuleFileSystem;
 import org.sonar.plugins.web.analyzers.ComplexityVisitor;
 import org.sonar.plugins.web.analyzers.PageCountLines;
 import org.sonar.plugins.tanaguru.api.TanaguruConstants;
-import org.sonar.plugins.tanaguru.rules.CheckClasses;
+import org.sonar.plugins.tanaguru.rules.TanaguruCheckClasses;
 import org.sonar.plugins.tanaguru.rules.TanaguruRulesRepository;
 import org.sonar.plugins.web.checks.AbstractPageCheck;
 import org.sonar.plugins.web.lex.PageLexer;
@@ -67,10 +67,15 @@ private static final Number[] FILES_DISTRIB_BOTTOM_LIMITS = {0, 5, 10, 20, 30, 6
   private final ModuleFileSystem fileSystem;
   private final FileLinesContextFactory fileLinesContextFactory;
 
-  public TanaguruSensor(Tanaguru tanaguru, RulesProfile profile, NoSonarFilter noSonarFilter, ModuleFileSystem fileSystem, FileLinesContextFactory fileLinesContextFactory) {
+  public TanaguruSensor(
+          Tanaguru tanaguru, 
+          RulesProfile profile, 
+          NoSonarFilter noSonarFilter, 
+          ModuleFileSystem fileSystem, 
+          FileLinesContextFactory fileLinesContextFactory) {
     this.tanaguru = tanaguru;
     this.noSonarFilter = noSonarFilter;
-    this.annotationCheckFactory = AnnotationCheckFactory.create(profile, TanaguruRulesRepository.REPOSITORY_KEY, CheckClasses.getCheckClasses());
+    this.annotationCheckFactory = AnnotationCheckFactory.create(profile, TanaguruRulesRepository.REPOSITORY_KEY, TanaguruCheckClasses.getCheckClasses());
     this.fileSystem = fileSystem;
     this.fileLinesContextFactory = fileLinesContextFactory;
 

@@ -28,12 +28,12 @@ import org.sonar.api.config.PropertyDefinition;
 import org.sonar.api.resources.Qualifiers;
 import org.sonar.plugins.tanaguru.api.TanaguruConstants;
 import org.sonar.plugins.tanaguru.core.Tanaguru;
+import org.sonar.plugins.tanaguru.core.TanaguruCodeColorizerFormat;
+import org.sonar.plugins.tanaguru.core.TanaguruSensor;
+import org.sonar.plugins.tanaguru.core.TanaguruSourceImporter;
+import org.sonar.plugins.tanaguru.duplications.TanaguruCpdMapping;
 import org.sonar.plugins.tanaguru.rules.Rgaa3Profile;
 import org.sonar.plugins.tanaguru.rules.TanaguruRulesRepository;
-import org.sonar.plugins.web.core.WebCodeColorizerFormat;
-import org.sonar.plugins.web.core.WebSensor;
-import org.sonar.plugins.web.core.WebSourceImporter;
-import org.sonar.plugins.web.duplications.WebCpdMapping;
 
 /**
  *
@@ -60,7 +60,7 @@ public final class TanaguruPlugin extends SonarPlugin {
     builder.add(Tanaguru.class);
 
 //  web files importer
-    builder.add(WebSourceImporter.class);
+    builder.add(TanaguruSourceImporter.class);
 
 //  web rules repository
     builder.add(TanaguruRulesRepository.class);
@@ -69,12 +69,12 @@ public final class TanaguruPlugin extends SonarPlugin {
     builder.add(Rgaa3Profile.class);
 
 //  web sensor
-    builder.add(WebSensor.class);
+    builder.add(TanaguruSensor.class);
 //
 //  Code Colorizer
-    builder.add(WebCodeColorizerFormat.class);
+    builder.add(TanaguruCodeColorizerFormat.class);
 //  Copy/Paste detection mechanism
-    builder.add(WebCpdMapping.class);
+    builder.add(TanaguruCpdMapping.class);
 //
     builder.addAll(pluginProperties());
 

@@ -17,36 +17,40 @@
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02
  */
-package org.sonar.plugins.tanaguru.rules;
+package org.sonar.plugins.tanaguru.duplications;
 
-import java.util.Arrays;
+import net.sourceforge.pmd.cpd.Tokenizer;
+import org.sonar.api.batch.CpdMapping;
+import org.sonar.api.resources.File;
+import org.sonar.api.resources.Language;
+import org.sonar.api.resources.Resource;
+
 import java.util.List;
-import org.sonar.plugins.tanaguru.checks.rgaa3.Rgaa301011Check;
-import org.sonar.plugins.tanaguru.checks.rgaa3.Rgaa308031Check;
-import org.sonar.plugins.tanaguru.checks.rgaa3.Rgaa311061Check;
-import org.sonar.plugins.tanaguru.checks.rgaa3.Rgaa313012Check;
+import org.sonar.plugins.tanaguru.core.Tanaguru;
+import org.sonar.plugins.web.duplications.WebCpdTokenizer;
 
-public final class CheckClasses {
+public class TanaguruCpdMapping implements CpdMapping {
 
-  @SuppressWarnings("rawtypes")
-  private static final Class[] CLASSES = new Class[] {
-    //RGAA3
-    Rgaa301011Check.class,
-    Rgaa308031Check.class,
-    Rgaa311061Check.class,
-    Rgaa313012Check.class,
-  };
+  private final Tanaguru tanaguru;
 
-  private CheckClasses() {
+  public TanaguruCpdMapping(Tanaguru tanaguru) {
+    this.tanaguru = tanaguru;
   }
 
-  /**
-   * Gets the list of XML checks.
-   * @return 
-   */
+  @Override
+  public Tokenizer getTokenizer() {
+    return new WebCpdTokenizer();
+  }
+
   @SuppressWarnings("rawtypes")
-  public static List<Class> getCheckClasses() {
-    return Arrays.asList(CLASSES);
+  @Override
+  public Resource createResource(java.io.File file, List<java.io.File> sourceDirs) {
+    return File.fromIOFile(file, sourceDirs);
+  }
+
+  @Override
+  public Language getLanguage() {
+    return tanaguru;
   }
 
 }

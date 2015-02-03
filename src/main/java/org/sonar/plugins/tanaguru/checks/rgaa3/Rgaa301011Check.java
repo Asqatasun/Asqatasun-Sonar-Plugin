@@ -31,7 +31,7 @@ import org.sonar.plugins.web.node.TagNode;
 @TanaguruRuleTags({TanaguruRuleTags.ACCESSIBILITY, TanaguruRuleTags.RGAA3})
 public class Rgaa301011Check extends AbstractPageCheck {
 
-  public static String ADD_ALT_MSG = "\"Ajouter un attribut \\\"alt\\\" à cette image.\"";
+  public static String ADD_ALT_MSG = "Ajouter un attribut \"alt\" à cette image.";
 
   @Override
   public void startElement(TagNode node) {
