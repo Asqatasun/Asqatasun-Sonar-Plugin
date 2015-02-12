@@ -28,7 +28,7 @@ public class TanaguruConstants {
   // ================ Plugin properties ================
 
   public static final String FILE_EXTENSIONS_PROP_KEY = "sonar.tanaguru.file.suffixes";
-  public static final String FILE_EXTENSIONS_DEF_VALUE = ".html,.xhtml,.rhtml,.shtml,.php,.jsp";
+  public static final String FILE_EXTENSIONS_DEF_VALUE = ".html,.xhtml,.rhtml,.shtml,.htm,.thtml,.php,.jsp,.jsf";
 
   private TanaguruConstants() {
   }

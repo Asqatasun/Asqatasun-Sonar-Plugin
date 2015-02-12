@@ -83,18 +83,18 @@ public final class TanaguruPlugin extends SonarPlugin {
 
   // Global JavaScript constants
   public static final String FALSE = "false";
-  public static final String FILE_SUFFIXES_KEY = "sonar.tanaguru.file.suffixes";
-  public static final String FILE_SUFFIXES_DEFVALUE = ".html,.xhtml,.php,.jsp,.jsf,.html";
+  public static final String FILE_SUFFIXES_KEY = TanaguruConstants.FILE_EXTENSIONS_PROP_KEY;
+  public static final String FILE_SUFFIXES_DEFVALUE = TanaguruConstants.FILE_EXTENSIONS_DEF_VALUE;
   public static final String PROPERTY_PREFIX = "sonar.tanaguru";
 
   private static ImmutableList<PropertyDefinition> pluginProperties() {
     return ImmutableList.of(
 
-      PropertyDefinition.builder(TanaguruConstants.FILE_EXTENSIONS_PROP_KEY)
+      PropertyDefinition.builder(FILE_SUFFIXES_KEY)
         .name("File suffixes")
         .description("List of file suffixes that will be scanned.")
         .category(CATEGORY)
-        .defaultValue(TanaguruConstants.FILE_EXTENSIONS_DEF_VALUE)
+        .defaultValue(FILE_SUFFIXES_DEFVALUE)
         .onQualifiers(Qualifiers.PROJECT)
         .build()
     );
