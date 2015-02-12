@@ -20,13 +20,18 @@
 package org.sonar.plugins.tanaguru.core;
 
 import org.sonar.api.config.Settings;
-import org.sonar.plugins.web.core.WebConfiguration;
+import org.sonar.plugins.tanaguru.api.TanaguruConstants;
 
-public class TanaguruConfiguration extends WebConfiguration{
+public class TanaguruConfiguration {
 
+  private final Settings settings;
 
   public TanaguruConfiguration(Settings settings) {
-    super(settings);
+    this.settings = settings;
+  }
+  
+  public String[] fileSuffixes() {
+    return settings.getStringArray(TanaguruConstants.FILE_EXTENSIONS_PROP_KEY);
   }
 
 }
