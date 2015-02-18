@@ -2,7 +2,8 @@
 
 ## Prerequesites
 
-* SonarQube 3.7.4+ installed
+* SonarQube 3.7.4+ installed (Have a look to the [official *Installing SonarQube* page](http://docs.sonarqube.org/display/SONAR/Installing) for details about installation and usage)
+* SonarRunner 2.4+ installed (Have a look to the [official *Installing and Configuring SonarQube Runner* page](http://docs.sonarqube.org/display/SONAR/Installing+and+Configuring+SonarQube+Runner) for details about installation)
 
 ## Installation
 

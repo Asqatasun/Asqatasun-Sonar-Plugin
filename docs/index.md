@@ -13,20 +13,7 @@ please go to [Tanaguru Documentation](http://tanaguru.readthedocs.org/))
 
 * Leverage strong level of automation provided by Tanaguru
 * Benefit from highly reliable tests of Tanaguru
-* Have stable or broken build depending on a given level of acceptance 
-(for instance, stable = at least 80% of tests are OK)
-* Have a centralized control panel in Jenkins
-
-You may also generate graphs of various metrics including:
-
-* Tanaguru Meter (the performance score of accessibility)
-* Number of Passed / Failed / Not Applicatble tests
-* Number of occurrences of failed tests
-
-All audits ran can also be viewed in detail within Tanaguru web application, easing the
-identification of given errors.
-
-You will find a detailed [list of accessibility tests in Tanaguru Documentation](http://tanaguru.readthedocs.org/).
+* Have a centralized control panel in SonarQube
 
 ## Download
 
