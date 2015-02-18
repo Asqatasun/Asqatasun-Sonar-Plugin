@@ -7,6 +7,6 @@ Let's give an example of a sonar-project.properties file that can be used to per
 
 ## Next step
 
-* proceed to [Run with Maven](sonar-runner-launch.md)
-* proceed to [Run with SonarQube Jenkins plugin](sonar-runner-launch.md)
-* proceed to [Run with SonarQube Eclipse plugin](sonar-runner-launch.md)
+* proceed to [Run with Maven](run-with-sonar-runner.md)
+* proceed to [Run with SonarQube Jenkins plugin](run-with-jenkins.md)
+* proceed to [Run with SonarQube Eclipse plugin](run-with-eclipse.md)

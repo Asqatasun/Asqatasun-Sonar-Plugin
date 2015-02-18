@@ -1,33 +1,13 @@
-# Tanaguru Jekins Plugin
+# Tanaguru SonarQube Plugin
 
-This project is the **Jenkins plugin** of Tanaguru. 
+This project is the **SonarQube plugin** of Tanaguru. 
 
 (If you are only interested in testing web accessibility in a graphical environment,
 please go to [Tanaguru Documentation](http://tanaguru.readthedocs.org/))
 
-The Jenkins plugin of Tanaguru is dedicated to integrate the web accessibility 
-tests Tanaguru can do into a Quality Assurance (QA) plateform, here Jenkins.
-It allows for example to add accessibility tests of a web application on a nightly 
-build process (for instance just after the unit tests and functional tests).
-
-The Jenkins plugin of Tanaguru is opensource (AGPL license).
-
 
 ## Problem & solution
 
-You already have a QA platform (Jenkins) to build and test your app. Different kinds of 
-tests are performed thanks to various Jenkins plugins (unit tests, functional 
-tests, smoke tests, performance tests...). 
-
-For accessibility testing, your staff uses some automated tools and human tests, but
-you would like to have a stack of basic accessibility tests done in a **fully automated and integrated**
-fashion.
-
-You know this is not sufficient to have a full compliance to accessibility,
-but this is a **good starting point to seamlessly increase the accessibility level** of your app
-(and by the way the accessibility skills of your dev team ;) ).
-
-Tanaguru Jenkins plugin is meant to *mecanize* the tests provided by Tanaguru.
 
 ## Features
 

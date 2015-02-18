@@ -49,7 +49,7 @@ Clicking on each *severity* link in the list of the issues leads to the details 
 
 ## Parsed files
 
-The analysed files are the files present in the directory set by the *sonar.sources* property that matches one of the [file suffixes set for the plugin](sonar-runner-launch.md#list-of-suffixes-for-files-to-analyze)
+The analysed files are the files present in the directory set by the *sonar.sources* property that matches one of the [file suffixes set for the plugin](configuration.md#list-of-suffixes-for-files-to-analyze)
 
 
 ## Next step
