@@ -7,8 +7,6 @@
 
 ## Installation
 
-By now, unfortunately, the Tanaguru sonar plugin is not accessible from the available plugin page of SonarQube.
-
 The installation of the plugin needs to be done "manually" by copying the jar of the plugin in the extensions/plugins folder of the local sonar context.
 
 Let's say your SonarQube is installed in the '/opt/sonar' folder. Execute the following command : 
@@ -22,6 +20,8 @@ sudo mv sonar-tanaguru* /opt/sonar/extensions/plugins/
 and restart the service.
 
 The plugin is now installed and a new language, called **accessibility**, is available for analysis.
+
+(By now, the Tanaguru sonar plugin is not accessible from the available plugin page of SonarQube.)
 
 ## Next step
 
