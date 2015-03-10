@@ -1,5 +1,7 @@
 # Run Tanaguru analysis with SonarQube Eclipse plugin
 
+## Prerequesites
+
 **Warning1** : This functionnality only works with SonarQube from version 4.5.2.
 
 **Warning2** : Ensure you've added Tanaguru as Plugins accepted for Preview and Incremental modes in SonarQube general settings panel.
