@@ -1,1 +1,18 @@
-/target/
+
+# Build
+target
+
+# Netbeans
+nbproject
+nb-configuration.xml
+nbactions.xml
+
+# saved files
+*~
+
+# Git - Merge temp file
+*.orig
+
+
+
+
