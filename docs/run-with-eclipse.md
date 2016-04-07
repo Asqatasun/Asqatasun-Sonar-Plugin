@@ -1,30 +1,30 @@
-# Run Tanaguru analysis with SonarQube Eclipse plugin
+# Run Asqatasun analysis with SonarQube Eclipse plugin
 
 ## Prerequesites
 
 **Warning1** : This functionnality only works with SonarQube from version 4.5.2.
 
-**Warning2** : Ensure you've added Tanaguru as Plugins accepted for Preview and Incremental modes in SonarQube general settings panel.
+**Warning2** : Ensure you've added Asqatasun as Plugins accepted for Preview and Incremental modes in SonarQube general settings panel.
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_set_accepted_plugin.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_set_accepted_plugin.png)
 
 ## Download Sonar Eclipse plugin
 
-Download [our version of the plugin](http://download.tanaguru.org/Tanaguru-sonar-plugin/sonar-eclipse.zip).
+Download [our version of the plugin @@@TODO sonar-eclipse.zip](#).
 
 ## Install the plugin
 
 From the menu, select "Help" => "Install New Software..."
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_install_plugin1.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_install_plugin1.png)
 
 Click on "Add" button.
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_install_plugin2.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_install_plugin2.png)
 
 Fill-in a name (let's say "sonar-plugin") and select the zip archive from your file system by clicking on "Archive" button.
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_install_plugin3.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_install_plugin3.png)
 
 Then, terminate the installation by clicking on "Next" until the end and restart Eclipse.
 
@@ -33,7 +33,7 @@ Then, terminate the installation by clicking on "Next" until the end and restart
 Open the Preference dialog ("Window" => "Preferences"). 
 A SonarQube entry is now present on left menu.
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_configure_plugin1.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_configure_plugin1.png)
 
 Select the submenu "*Preview Analysis Properties*" and add the following properties  : 
 
@@ -48,17 +48,17 @@ As previously, a SonarQube entry is now present on left menu.
 
 You have to add the properties from this menu as described previously. The configuration is thus only applied on the current project.
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_configure_plugin2.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_configure_plugin2.png)
 
 ## Perform analysis
 
 To perform analysis, right click on the project you want to test and select SonarQube => Analyze (or Ctrl+Alt+Q).
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_use_plugin1.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_use_plugin1.png)
 
 The results are now accessible within the "SonarQube issue" window, and you can access the error on the source code by double clicking on any issue.
 
-![](Images/screenshot_20150309_TANAGURU_eclipse_use_plugin2.png)
+![](Images/screenshot_20150309_ASQATASUN_eclipse_use_plugin2.png)
 
 ## Next step
 

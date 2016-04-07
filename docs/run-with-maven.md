@@ -1,4 +1,4 @@
-# Run Tanaguru analysis with Maven
+# Run Asqatasun analysis with Maven
 
 You can have all the details about usage and set-up in the [official *Analyzing with Maven* page](http://docs.sonarqube.org/display/SONAR/Analyzing+with+Maven).
 
@@ -40,7 +40,7 @@ The following command  will perform analysis with "Java way" profile :
 mvn sonar:sonar
 ```
 
-The following command will perform analysis with "Tanaguru" profile, i.e accessibility language : 
+The following command will perform analysis with "Asqatasun" profile, i.e accessibility language : 
 
 ```
 mvn sonar:sonar -Ptanaguru

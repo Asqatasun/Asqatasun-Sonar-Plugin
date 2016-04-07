@@ -1,4 +1,4 @@
-# Run Tanaguru analysis with SonarQube Jenkins plugin
+# Run Asqatasun analysis with SonarQube Jenkins plugin
 
 
 ## Next step

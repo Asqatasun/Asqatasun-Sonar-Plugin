@@ -1,6 +1,6 @@
 /*
- * SonarQube Tanaguru Plugin
- * Copyright (C) 2015 Tanaguru.org
+ * SonarQube Asqatasun Plugin
+ * Copyright (C) 2016 Asqatasun.org
  * dev@sonar.codehaus.org
  *
  * This program is free software; you can redistribute it and/or

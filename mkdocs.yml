@@ -1,4 +1,4 @@
-site_name: Tanaguru Sonar plugin
+site_name: Asqatasun Sonar plugin
 pages:
 - ['index.md', 'Home']
 - ['install.md', 'Installation']
@@ -10,4 +10,4 @@ pages:
 - ['developer-doc.md', 'Developer doc']
 
 theme: readthedocs
-repo_url: https://github.com/Tanaguru/sonar-tanaguru
+repo_url: https://github.com/Asqatasun/Asqatasun-Sonar-Plugin

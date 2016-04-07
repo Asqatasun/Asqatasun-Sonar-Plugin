@@ -1,10 +1,10 @@
-# Run Tanaguru analysis with the SonarQube Runner
+# Run Asqatasun analysis with the SonarQube Runner
 
 You can have all the details about usage and set-up in the [official *Analyzing with SonarQube Runner* page](http://docs.sonarqube.org/display/SONAR/Analyzing+with+SonarQube+Runner).
 
 ## Concrete example
 
-Let's give an example of a *sonar-project.properties* file that can be used to perform an analysis with the Tanaguru plugin.
+Let's give an example of a *sonar-project.properties* file that can be used to perform an analysis with the Asqatasun plugin.
 
 ``` php
 # Required metadata
@@ -36,16 +36,16 @@ sonar-runner
 
 The result of the analysis is now available from the SonarQube web interface (accessible for a default installation at the URL http://localhost:9000/)
 
-The Tanaguru plugin analyzes HTML within any language, such as PHP, JSP, or whatever and produces a synthesis that contains metrics such as :
+The Asqatasun plugin analyzes HTML within any language, such as PHP, JSP, or whatever and produces a synthesis that contains metrics such as :
 
 * The list of the issues sorted by their severity
 * The number of tested files and lines of code
 
-![](Images/screenshot_20150219_TANAGURU_sonar_analysis_result.png)
+![](Images/screenshot_20150219_ASQATASUN_sonar_analysis_result.png)
 
 Clicking on each *severity* link in the list of the issues leads to the details of the errors, pointing precisely the problem in the source code (type of error, file, and line number).
 
-![](Images/screenshot_20150219_TANAGURU_sonar_analysis_failed_rules.png)
+![](Images/screenshot_20150219_ASQATASUN_sonar_analysis_failed_rules.png)
 
 ## Parsed files
 

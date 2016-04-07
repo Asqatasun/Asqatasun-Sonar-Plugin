@@ -1,20 +1,20 @@
-# Configuration of Tanaguru SonarQube plugin
+# Configuration of Asqatasun SonarQube plugin
 
-Once the plugin is installed, Tanaguru profiles are now available from the Quality Profiles page.
+Once the plugin is installed, Asqatasun profiles are now available from the Quality Profiles page.
 
-![](Images/screenshot_20150218_TANAGURU_sonar_configuration.png)
+![](Images/screenshot_20150218_ASQATASUN_sonar_configuration.png)
 
-The associated language of the Tanaguru Profiles is **accessibility** and the default profil is **rgaa3**.
+The associated language of the Asqatasun Profiles is **accessibility** and the default profil is **rgaa3**.
 
 ## The default profile : rgaa3
 
 To see details about the rules of the **rgaa3** profile, click on the **rgaa3** link in the Quality Profiles page.
 
-![](Images/screenshot_20150218_TANAGURU_sonar_configuration_rgaa3_profil_link.png)
+![](Images/screenshot_20150218_ASQATASUN_sonar_configuration_rgaa3_profil_link.png)
 
 By now, 4 rules are implemented and they are all activated by default, with a *Major* severity level.
 
-![](Images/screenshot_20150218_TANAGURU_sonar_configuration_rgaa3_profil_page.png)
+![](Images/screenshot_20150218_ASQATASUN_sonar_configuration_rgaa3_profil_page.png)
 
 You can customize this default rule set by activating/desactivating and changing the severity level of each rule from this page.
 The changes are automatically saved.
@@ -37,24 +37,24 @@ If the extension of the files you're about to analyze is not among this list, yo
 
 To do so, login with an administrator account and click on the *Settings* link that appeared on the top bar menu.
 
-*Tanaguru* is present in the category list, and its selection leads to the *Tanaguru settings page*.
+*Asqatasun* is present in the category list, and its selection leads to the *Asqatasun settings page*.
 
 Here, you can add the extensions, in the dedicated textfield : each extension needs to be prefixed by "." .
-Validate your modifications by clicking on the *Save Tanaguru Settings* button.
+Validate your modifications by clicking on the *Save Asqatasun Settings* button.
 
 **Note** : The addition of one or several extensions doesn't preserve the default values. Start by copying and pasting the default list in the textfield before adding new extensions.
 
-![](Images/screenshot_20150218_TANAGURU_sonar_general_settings.png)
+![](Images/screenshot_20150218_ASQATASUN_sonar_general_settings.png)
 
-## Add Tanaguru plugin in plugin list accepted for dry run
+## Add Asqatasun plugin in plugin list accepted for dry run
 
-Regarding the way you launch analysis, you may need to activate the "dry run" mode of SonarQube for the Tanaguru plugin.
+Regarding the way you launch analysis, you may need to activate the "dry run" mode of SonarQube for the Asqatasun plugin.
 
 This mode consists in performing a full analysis, without storing the results in the database.
 
-To do so, go to the *General* category of the *General Settings* page and add *Tanaguru* in *Plugins accepted for dry run* field.
+To do so, go to the *General* category of the *General Settings* page and add *Asqatasun* in *Plugins accepted for dry run* field.
 
-![](Images/screenshot_20150219_TANAGURU_sonar_general_dry_run.png)
+![](Images/screenshot_20150219_ASQATASUN_sonar_general_dry_run.png)
 
 ## Next steps
 

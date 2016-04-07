@@ -1,9 +1,9 @@
-# Tanaguru SonarQube Plugin
+# Asqatasun SonarQube Plugin
 
-This project is the **SonarQube plugin** of Tanaguru. 
+This project is the **SonarQube plugin** of Asqatasun. 
 
 (If you are only interested in testing web accessibility in a graphical environment,
-please go to [Tanaguru Documentation](http://tanaguru.readthedocs.org/))
+please go to [Asqatasun Documentation](http://doc.asqatasun.org/en/))
 
 
 ## Problem & solution
@@ -11,17 +11,17 @@ please go to [Tanaguru Documentation](http://tanaguru.readthedocs.org/))
 
 ## Features
 
-* Leverage strong level of automation provided by Tanaguru
-* Benefit from highly reliable tests of Tanaguru
+* Leverage strong level of automation provided by Asqatasun
+* Benefit from highly reliable tests of Asqatasun
 * Have a centralized control panel in SonarQube
 
 ## Download
 
-[Tanaguru sonar plugin latest release (.jar, ~500kb)](http://download.tanaguru.org/Tanaguru-sonar-plugin/sonar-tanaguru-latest.jar)
+[Asqatasun sonar plugin latest release (.jar, ~500kb)  @@@TODO .jar](#)
 
 ## Demo
 
-@@@ see Tanaguru on Tanaguru
+@@@TODO
 
 ## Installation and documentation
 
@@ -29,28 +29,17 @@ please go to [Tanaguru Documentation](http://tanaguru.readthedocs.org/))
 * [Configuration](configuration.md)
 * [Developer doc (how to build, to contribute)](developer-doc.md)
 
-## Support and discussions
-
-* [Tanaguru discussion space](http://discuss.tanaguru.org) 
 
 ## Contribute
 
-- [Source Code](https://github.com/Tanaguru/sonar-tanaguru/)
-- [Issue Tracker](https://github.com/Tanaguru/sonar-tanaguru/issues)
+- [Source Code](https://github.com/Asqatasun/Asqatasun-Sonar-Plugin/)
+- [Issue Tracker](https://github.com/Asqatasun/Asqatasun-Sonar-Plugin/issues)
 
-## Contact 
+## Support and discussions
 
-* email to `tanaguru AT tanaguru dot org` (only english, french and klingon is spoken :) ) 
-* [Twitter @TanaguruApp](https://twitter.com/tanaguruapp)
+* [Asqatasun discussion space](http://forum.asqatasun.org/) 
+* [Twitter @Asqatasun](https://twitter.com/Asqatasun)
+* email to `asqatasun AT asqatasun dot org` (only English, French and klingon is spoken :) ) 
 
-## Other opensource tools
 
-* [KBAccess](http://www.kbaccess.org/) : database of good and bad examples of web accessibility
-* [Tanaguru Contrast-Finder](http://contrast-finder.tanaguru.com/) : for a given wrong contrast, *offers* good color combination
-* [Accessibility observatory](http://observatoire-accessibilite.org/) : have an overview of the accessibility of a large set of websites
- 
-All these projects are opensource and also under the umbrella of [Tanaguru Github account](https://github.com/Tanaguru)
 
-Have fun !
-
-[Tanaguru Team](http://tanaguru.readthedocs.org/en/develop/tanaguru-team/)
