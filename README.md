@@ -3,7 +3,7 @@
 
 # Asqatasun SonarQube Plugin
 
-his project is the **SonarQube plugin** of Asqatasun. 
+This project is the **SonarQube plugin** of Asqatasun. 
 
 If you are only interested in testing web accessibility in a graphical environment,
 please go to [Asqatasun Documentation](http://doc.asqatasun.org/en/)
