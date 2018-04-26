@@ -16,7 +16,7 @@ Let's say your SonarQube is installed in the '/opt/sonar' folder. Execute the fo
 ```bash
 cd /tmp/
 wget http://download.asqatasun.org/Asqatasun-sonar-plugin/sonar-asqatasun-latest.jar
-sudo mv sonar-tanaguru* /opt/sonar/extensions/plugins/
+sudo mv sonar-asqatasun* /opt/sonar/extensions/plugins/
 ```
 
 

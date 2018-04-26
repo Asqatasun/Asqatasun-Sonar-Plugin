@@ -1,18 +1,44 @@
 
-# Build
+##### Build
+
+*.class
+
+# Package Files 
+*.jar
+*.war
+*.ear
+*.tar.gz
+
+# maven
 target
+*.log
+
+# maven (mvn versions:set)
+pom.xml.versionsBackup
+
+
+##### GIT
+
+# Git - Merge temp file
+*.orig
+
+# git shortlog -s -n
+#  	file for map author and committer names and email addresses
+#  	to canonical real names and email addresses
+/.mailmap
+
+
+##### IDE / Text editor
 
 # Netbeans
 nbproject
 nb-configuration.xml
 nbactions.xml
 
+# Intellij
+.idea
+*.iml
+
 # saved files
 *~
-
-# Git - Merge temp file
-*.orig
-
-
-
 

@@ -32,7 +32,7 @@ mvn sonar:sonar
 
 This configuration overrides the default behaviour that performs analysis on java source code.
 
-To keep the default behaviour, you just need to set an id different from "*sonar*" to the profile. Let's replace "*sonar*" by "*tanaguru*" in the previous settings example.
+To keep the default behaviour, you just need to set an id different from "*sonar*" to the profile. Let's replace "*sonar*" by "*asqatasun*" in the previous settings example.
 
 The following command  will perform analysis with "Java way" profile : 
 
@@ -43,7 +43,7 @@ mvn sonar:sonar
 The following command will perform analysis with "Asqatasun" profile, i.e accessibility language : 
 
 ```
-mvn sonar:sonar -Ptanaguru
+mvn sonar:sonar -Pasqatasun
 ```
 
 By default the *sonar.sources* property is set to the value of the Maven sourceDirectory property (by default it is src/main/java) plus pom.xml (and also src/main/webapp is automatically added for war modules).
@@ -52,12 +52,12 @@ Regarding the type of your project, you may wish to override this by using the "
 
 ### Configuration at project level from pom.xml
 
-Profiles can be defined at project level. They can be set in the pom.xml directly. Thus, a *tanaguru* profile may look like : 
+Profiles can be defined at project level. They can be set in the pom.xml directly. Thus, a *asqatasun* profile may look like :
 ```xml
 ...
     <profiles>
         <profile>
-            <id>tanaguru</id>
+            <id>asqatasun</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
