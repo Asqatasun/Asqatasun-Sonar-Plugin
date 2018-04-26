@@ -15,10 +15,10 @@
   <version>0.1</version>
   <name>SonarQube Asqatasun Plugin</name>
 
-  <inceptionYear>2015</inceptionYear>
+  <inceptionYear>2016</inceptionYear>
   <organization>
-    <name>Tanaguru.org</name>
-    <url>http://www.tanaguru.org</url>
+    <name>Asqatasun.org</name>
+    <url>http://www.asqatasun.org</url>
   </organization>
   
   <description>Analyze accessibility within HTML, Ruby and JSP/JSF templates</description>
