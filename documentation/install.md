@@ -7,15 +7,16 @@
 
 ## Installation
 
+Last release: https://github.com/Asqatasun/Asqatasun-Sonar-Plugin/releases
+
 The installation of the plugin needs to be done "manually" by copying the jar of the plugin in the extensions/plugins folder of the local sonar context.
 
-Let's say your SonarQube is installed in the '/opt/sonar' folder. Execute the following command : 
+Let's say your SonarQube is installed in the '/opt/sonar' folder. Execute the following command :
 
-@@@TODO fix URL http://download.asqatasun.org/Asqatasun-sonar-plugin/sonar-asqatasun-latest.jar
 
 ```bash
 cd /tmp/
-wget http://download.asqatasun.org/Asqatasun-sonar-plugin/sonar-asqatasun-latest.jar
+wget https://github.com/Asqatasun/Asqatasun-Sonar-Plugin/releases/download/v<version>/sonar-asqatasun-<version>.jar
 sudo mv sonar-asqatasun* /opt/sonar/extensions/plugins/
 ```
 
