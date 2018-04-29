@@ -12,7 +12,7 @@
   <groupId>org.codehaus.sonar-plugins.asqatasun</groupId>
   <artifactId>sonar-asqatasun</artifactId>
   <packaging>sonar-plugin</packaging>
-  <version>0.1</version>
+  <version>0.2.0</version>
   <name>SonarQube Asqatasun Plugin</name>
 
   <inceptionYear>2016</inceptionYear>
